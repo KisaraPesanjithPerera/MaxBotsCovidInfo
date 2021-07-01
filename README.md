@@ -32,7 +32,7 @@
 * simply edite repository 
 * click deploy button 
 
-### Credits:
+### Developer :
 
 ### [slbotzone](https://t.me/slbotzone)
 
