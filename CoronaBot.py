@@ -11,10 +11,10 @@ bot = TelegramClient('bot', APP_ID, APP_HASH).start(bot_token=BOTT)
 
 
 def staat(qq):
-  url = "https://api.telegram.org/bot"+BOTT+"/sendsticker"
+  url = "https://api.telegram.org/bot"+BOTT+"/sendphoto"
   data = {
     "chat_id": str(qq),
-    "sticker":"CAACAgIAAxkBAAEMNsdg97ERtxq8EmqWdQAB5NIsSIOWy_UAAsgAA_cCyA-vCAx9g2vPCx4E",
+    "photo":"https://telegra.ph/file/cb8084323dcd0b7b65a6f.jpg",
     "caption": " Get instant access to Corona in Sri Lanka 🇱🇰. 📊 Automatically retrieve the latest corona information after adding it to the SLCovid19slbzonebot 😷 to your  Group. Use / help for more information.",
     "parse_mode": "HTML",
     "reply_markup": {
@@ -77,26 +77,6 @@ def staa():
                     global_recovered + '</code>' + '\n' + '\n' + '\n' +
                     '✅ All information is provided by the government and reputable sources' + '\n' +
                     '~ @sl_bot_zone 🇱🇰 ~')
-      "reply_markup": {
-        "inline_keyboard": [
-            [
-                {
-                    "text": "➕ Add me to your Group 🦠 ",
-                    "url": "https://t.me/SLCovid19slbzonebot?startgroup=new"
-                }, 
-                {
-                    "text": "📦 socure code 📦 ",
-                    "url": "https://github.com/youtubeslgeekshow/covid-update-bot"
-                }
-                 {
-                    "text": "update channel  🔔 ",
-                    "url": "https://t.me/slbotzone"
-                }
-            ]
-          
-        ]
-    }
-}
     return textt
 
 
