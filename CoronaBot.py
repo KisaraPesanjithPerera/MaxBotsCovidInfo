@@ -18,25 +18,25 @@ def staat(qq):
     "caption": " Get instant access to Corona in Sri Lanka 🇱🇰. 📊 Automatically retrieve the latest corona information after adding it to the SLCovid19slbzonebot 😷 to your  Group. Use   /help   for more information.",
     "parse_mode": "HTML",
     "reply_markup": {
-        "inline_keyboard": [
-            [
-                {
-                    "text": "➕ Add me to your Group 🦠 ",
-                    "url": "https://t.me/SLCovid19slbzonebot?startgroup=new"
-                }, 
-                {
-                    "text": " 📦 socure code 📦 ",
-                    "url": "https://github.com/youtubeslgeekshow/covid-update-bot"
-                }, 
-                {
-                   "text": "update channel  🔔 ",
-                   "url": "https://t.me/sl_bot_zone"
-                },
-            ]
-          
-        ]
-    }
-}
+
+"text": " 📣 subscribe us   👮‍♀️ ,
+
+"url": "https://www.youtube.com/channel/UCvYfJcTr8RY72dIapzMqFQA?sub_confirmation=1"
+
+},
+{ 
+
+"text": " ➕ Add me to your Group 🦠 ,
+
+"url": "https://t.me/SLCovid19s1bzonebot?startgroup-new"
+
+},
+{ 
+
+"text": " update channel  🔔 ,
+
+"url": "https://t.me/sl_bot_zone"
+},
   headers = {'Content-type': 'application/json'}
   r = requests.post(url, data=json.dumps(data), headers=headers)
 
@@ -78,8 +78,6 @@ def staa():
                     '✅ All information is provided by the government and reputable sources' + '\n' +
                     '~ @sl_bot_zone 🇱🇰 ~'),
     return textt
-
-
 def sta():
          r = requests.get(f"https://corona.lmao.ninja/v2/countries/{variabla}").json()
          reply_text = f"**රට {r['country']} 🦠**\n🤒 Number of confirmed patients (cumulative)= {r['cases']:,}\n😷 Number of new patients = {r['todayCases']:,}\n⚰ Number of deaths = {r['deaths']:,}\n⚰ New death  = {r['todayDeaths']:,}\n🙂 Healthed number =  {r['recovered']}"
