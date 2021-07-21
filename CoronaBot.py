@@ -15,7 +15,7 @@ def staat(qq):
   data = {
     "chat_id": str(qq),
     "photo":"https://telegra.ph/file/cb8084323dcd0b7b65a6f.jpg",
-    "caption": " Get instant access to Corona in Sri Lanka 🇱🇰. 📊 Automatically retrieve the latest corona information after adding it to the SLCovid19slbzonebot 😷 to your  Group. Use / help for more information.",
+    "caption": " Get instant access to Corona in Sri Lanka 🇱🇰. 📊 Automatically retrieve the latest corona information after adding it to the SLCovid19slbzonebot 😷 to your  Group. Use   /help   for more information.",
     "parse_mode": "HTML",
     "reply_markup": {
         "inline_keyboard": [
@@ -30,7 +30,7 @@ def staat(qq):
                 },
                  {
                     "text": "update channel  🔔 ",
-                    "url": "https://t.me/slbotzone"
+                    "url": "https://t.me/sl_bot_zone"
                 },
             ]
           
@@ -76,7 +76,27 @@ def staa():
                     global_deaths + '</code>' + '\n' + '🙂 Healed number = ' '<code>'  +
                     global_recovered + '</code>' + '\n' + '\n' + '\n' +
                     '✅ All information is provided by the government and reputable sources' + '\n' +
-                    '~ @sl_bot_zone 🇱🇰 ~')
+                    '~ @sl_bot_zone 🇱🇰 ~') 
+    "reply_markup": {
+        "inline_keyboard": [
+            [
+                {
+                    "text": "➕ Add me to your Group 🦠 ",
+                    "url": "https://t.me/SLCovid19slbzonebot?startgroup=new"
+                }, 
+                {
+                    "text": "📦 socure code 📦 ",
+                    "url": "https://github.com/youtubeslgeekshow/covid-update-bot"
+                },
+                 {
+                    "text": "update channel  🔔 ",
+                    "url": "https://t.me/slbotzone"
+                },
+            ]
+          
+        ]
+    }
+}
     return textt
 
 
