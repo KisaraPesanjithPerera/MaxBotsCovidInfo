@@ -27,11 +27,11 @@ def staat(qq):
                 {
                     "text": "📦 socure code 📦 ",
                     "url": "https://github.com/youtubeslgeekshow/covid-update-bot"
-                }
+                },
                  {
                     "text": "update channel  🔔 ",
                     "url": "https://t.me/slbotzone"
-                }
+                },
             ]
           
         ]
