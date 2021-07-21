@@ -24,14 +24,14 @@ def staat(qq):
                     "text": "➕ Add me to your Group 🦠 ",
                     "url": "https://t.me/SLCovid19slbzonebot?startgroup=new"
                 }, 
-                {
+                [
                     "text": "📦 socure code 📦 ",
                     "url": "https://github.com/youtubeslgeekshow/covid-update-bot"
-                },
-                 {
+                ],
+                 [
                     "text": "update channel  🔔 ",
                     "url": "https://t.me/sl_bot_zone"
-                },
+                 ],
             ]
           
         ]
@@ -77,26 +77,6 @@ def staa():
                     global_recovered + '</code>' + '\n' + '\n' + '\n' +
                     '✅ All information is provided by the government and reputable sources' + '\n' +
                     '~ @sl_bot_zone 🇱🇰 ~'),
-"reply_markup": {
-        "inline_keyboard": [
-            [
-                {
-                    "text": "➕ Add me to your Group 🦠 ",
-                    "url": "https://t.me/SLCovid19slbzonebot?startgroup=new"
-                }, 
-                {
-                    "text": "📦 socure code 📦 ",
-                    "url": "https://github.com/youtubeslgeekshow/covid-update-bot"
-                },
-                 {
-                    "text": "update channel  🔔 ",
-                    "url": "https://t.me/slbotzone"
-                },
-            ]
-          
-        ]
-    }
-}
     return textt
 
 
