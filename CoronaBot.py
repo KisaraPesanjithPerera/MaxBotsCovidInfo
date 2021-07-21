@@ -11,7 +11,7 @@ bot = TelegramClient('bot', APP_ID, APP_HASH).start(bot_token=BOTT)
 
 
 def staat(qq):
-  url = "https://api.telegram.org/bot"+BOTT+"/sendphoto"
+  url = "https://api.telegram.org/bot"+BOTT+"/sendsticker"
   data = {
     "chat_id": str(qq),
     "sticker":"CAACAgIAAxkBAAEMNsdg97ERtxq8EmqWdQAB5NIsSIOWy_UAAsgAA_cCyA-vCAx9g2vPCx4E",
