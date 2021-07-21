@@ -25,7 +25,7 @@ def staat(qq):
                     "url": "https://t.me/SLCovid19slbzonebot?startgroup=new"
                 }, 
                 [
-                    "text": "📦 socure code 📦 ",
+                    "text": " 📦 socure code 📦 ".
                     "url": "https://github.com/youtubeslgeekshow/covid-update-bot"
                 ],
                  [
