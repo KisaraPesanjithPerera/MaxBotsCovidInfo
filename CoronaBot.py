@@ -24,14 +24,14 @@ def staat(qq):
                     "text": "➕ Add me to your Group 🦠 ",
                     "url": "https://t.me/SLCovid19slbzonebot?startgroup=new"
                 }, 
-                [
-                    "text": " 📦 socure code 📦 ".
+                {
+                    "text": " 📦 socure code 📦 ",
                     "url": "https://github.com/youtubeslgeekshow/covid-update-bot"
-                ],
-                 [
-                    "text": "update channel  🔔 ",
-                    "url": "https://t.me/sl_bot_zone"
-                 ],
+                }, 
+                {
+                   "text": "update channel  🔔 ",
+                   "url": "https://t.me/sl_bot_zone"
+                },
             ]
           
         ]
