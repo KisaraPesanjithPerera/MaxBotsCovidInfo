@@ -35,12 +35,6 @@ def staat(qq):
                              text="⚡️ Developer   ",
                              url="https://t.me/supunma")
                     ],
-                    [
-                        InlineKeyboardButton(
-                            text=" ➕ Add me to your Grou 🦠 ",
-                             url="https://t.me/SLCovid19slbzonebot?startgroup=new") 
-                    
-                    ]
             ]
       },
 headers = {'Content-type': 'application/json'}
