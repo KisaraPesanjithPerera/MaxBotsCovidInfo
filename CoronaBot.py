@@ -21,14 +21,6 @@ def staat(qq):
             [
                     [
                         InlineKeyboardButton(
-                             text=" 👪 Bot Support Group ",
-                             url="https://t.me/slbotzone"),
-                         InlineKeyboardButton(
-                             text=" 🔔 Bot Update Channel ",
-                             url="https://t.me/sl_bot_zone")
-                    ],
-                    [
-                        InlineKeyboardButton(
                              text="📦 How to create your one  ",
                              url="https://www.youtube.com/channel/UCvYfJcTr8RY72dIapzMqFQA"),
                          InlineKeyboardButton(
