@@ -17,7 +17,8 @@ def staat(qq):
     "photo":"https://telegra.ph/file/cb8084323dcd0b7b65a6f.jpg",
     "caption": " Get instant access to Corona in Sri Lanka 🇱🇰. 📊 Automatically retrieve the latest corona information after adding it to the SLCovid19slbzonebot 😷 to your  Group. Use   /help   for more information.",
     "parse_mode": "HTML",
-    "reply_markup": [
+    "reply_markup":{
+        "inline_keyboard": [ 
             [
                 {
                     "text": "➕ Add me to your Group 🦠 ",
