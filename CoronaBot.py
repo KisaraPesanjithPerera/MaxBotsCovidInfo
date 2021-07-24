@@ -2,9 +2,9 @@ from telethon import TelegramClient, events
 import json
 import requests
 
-APP_ID= '6013428' id #my.telegram.org
-APP_HASH= '1d39943fac13b355702d785545ac1cc8' #my.telegram.org
-BOTT='1824545221:AAFdLBJpQ5Ef6oLf38Aa5ZfczR7v4htkfoc'#@botfather
+APP_ID=3964155 #my.telegram.org
+APP_HASH='95136f46ae1425c4272596ce27543e99' #my.telegram.org
+BOTT=''#@botfather
 
 bot = TelegramClient('bot', APP_ID, APP_HASH).start(bot_token=BOTT)
 
@@ -14,26 +14,26 @@ def staat(qq):
   url = "https://api.telegram.org/bot"+BOTT+"/sendphoto"
   data = {
     "chat_id": str(qq),
-    "photo":"https://telegra.ph/file/cb8084323dcd0b7b65a6f.jpg",
-    "caption": " Get instant access to Corona in Sri Lanka 🇱🇰. 📊 Automatically retrieve the latest corona information after adding it to the SLCovid19slbzonebot 😷 to your  Group. Use   /help   for more information.",
+    "photo": "https://telegra.ph/file/444f0805649cfcdf19112.jpg",
+    "caption": "ශ්‍රී ලංකාවේ කොරෝනා තතු එසැනින් දැනගන්න. @SLCovid19slbzonebot Group එකට Add කරගත් පසු ස්වයංක්‍රියව නවතම කොරෝනා තතු ලබාගත හැක.  වැඩි විස්තර සදහා /help භාවිතා කරන්න.     ~ @sl_bot_zone ",
     "parse_mode": "HTML",
-    "reply_markup":{
-        "inline_keyboard": [ 
+    "reply_markup": {
+        "inline_keyboard": [
             [
                 {
                     "text": "➕ Add me to your Group 🦠 ",
                     "url": "https://t.me/SLCovid19slbzonebot?startgroup=new"
                 }, 
                 {
-                    "text": "📦 Ho to create your one  ",
-                    "url": "https://www.youtube.com/channel/UCvYfJcTr8RY72dIapzMqFQA"
+                    "text": " 🔔 Channel",
+                    "url": "https://t.me/sl_bot_zone"
                 }
             ]
         ]
     }
 }
-headers = {'Content-type': 'application/json'}
-r = requests.post(url, data=json.dumps(data), headers=headers)
+  headers = {'Content-type': 'application/json'}
+  r = requests.post(url, data=json.dumps(data), headers=headers)
 
 def staa():
     r = requests.get('https://hpb.health.gov.lk/api/get-current-statistical')
@@ -53,29 +53,31 @@ def staa():
 
     textt = str(
                     '<b>CURRENT SITUATION</b>' + '\n' + '\n' + '<b>' +
-                    update_date_time + ' now </b>' + '\n' + '\n' +
-                    '<b>🇱🇰 Situation in Sri Lanka</b>' + '\n' + '\n'  +
-                    '🤒 Number of confirmed patients (cumulative) = ' + '<code>' +
+                    update_date_time + ' වන විට</b>' + '\n' + '\n' +
+                    '<b>🇱🇰 ශ්‍රී ලංකාවේ තත්ත්වය</b>' + '\n' + '\n'  +
+                    '🤒 තහවුරු කරනලද රෝගීන් සංඛ්‍යාව(සමුච්චිත) = ' + '<code>' +
                     local_total_cases + '</code>' + '\n' +
-                    '🤕 Number of patients receiving treatment = ' + '<code>' + local_active_cases + '</code>' +
-                    '\n' + '😷 Number of new patients = ' + '<code>' + local_new_cases + '</code>' +
+                    '🤕 ප්‍රතිකාර ලබන රෝගීන් සංඛ්‍යාව = ' + '<code>' + local_active_cases + '</code>' +
+                    '\n' + '😷 නව රෝගීන් සංඛ්‍යාව = ' + '<code>' + local_new_cases + '</code>' +
                     '\n' +
-                    '🏥 Persons currently under investigation in hospitals = ' + '<code>' +
+                    '🏥 දැනට රෝහල්වල විමර්ශන යටතේ සිටින පුද්ගලයින් = ' + '<code>' +
                     local_total_number_of_individuals_in_hospitals +  '</code>' + '\n' +
-                    '🙂 The number who recovered and left = ' + '<code>' + local_recovered + '</code>' + 
-                    '\n' + '⚰ Number of deaths= ' + '<code>'  + local_deaths + '</code>' + '\n' +
-                    '\n' + '<b>🌎 Worldwide status</b>' + '\n' +
-                    '\n' + '🤒 Number of confirmed patients (cumulative) = ' '<code>'  +
-                    global_total_cases + '</code>' + '\n' + '😷 Number of new patients= ' '<code>'  +
-                    global_new_cases + '</code>' + '\n' + '⚰ Number of deaths = ' '<code>'  +
-                    global_deaths + '</code>' + '\n' + '🙂 Healed number = ' '<code>'  +
+                    '🙂 සුවය ලබා පිටව ගිය සංඛ්‍යාව = ' + '<code>' + local_recovered + '</code>' + 
+                    '\n' + '⚰ මරණ සංඛ්‍යාව = ' + '<code>'  + local_deaths + '</code>' + '\n' +
+                    '\n' + '<b>🌎 ලොව පුරා තත්ත්වය</b>' + '\n' +
+                    '\n' + '🤒 තහවුරු කරනලද රෝගීන් සංඛ්‍යාව (සමුච්චිත) = ' '<code>'  +
+                    global_total_cases + '</code>' + '\n' + '😷 නව රෝගීන් සංඛ්‍යාව = ' '<code>'  +
+                    global_new_cases + '</code>' + '\n' + '⚰ මරණ සංඛ්‍යාව = ' '<code>'  +
+                    global_deaths + '</code>' + '\n' + '🙂 සුවය ලැබූ සංඛ්‍යාව = ' '<code>'  +
                     global_recovered + '</code>' + '\n' + '\n' + '\n' +
-                    '✅ All information is provided by the government and reputable sources' + '\n' +
-                    '~ @sl_bot_zone 🇱🇰 ~'),
+                    '✅ සියලු තොරතුරු රජයේ සහ පිලිගත් මුලාශ්‍ර මගිනි' + '\n' +
+                    '~ @sl_bot_zone 🇱🇰 ~')
     return textt
+
+
 def sta():
          r = requests.get(f"https://corona.lmao.ninja/v2/countries/{variabla}").json()
-         reply_text = f"**රට {r['country']} 🦠**\n🤒 Number of confirmed patients (cumulative)= {r['cases']:,}\n😷 Number of new patients = {r['todayCases']:,}\n⚰ Number of deaths = {r['deaths']:,}\n⚰ New death  = {r['todayDeaths']:,}\n🙂 Healthed number =  {r['recovered']}"
+         reply_text = f"**රට {r['country']} 🦠**\n🤒 තහවුරු කරනලද රෝගීන් සංඛ්‍යාව(සමුච්චිත) = {r['cases']:,}\n😷 නව රෝගීන් සංඛ්‍යාව = {r['todayCases']:,}\n⚰ මරණ සංඛ්‍යාව = {r['deaths']:,}\n⚰ නව මරණ සංඛ්‍යාව = {r['todayDeaths']:,}\n🙂 සුවය ලැබූ සංඛ්‍යාව =  {r['recovered']}"
          message.reply_text(reply_text, parse_mode=ParseMode.MARKDOWN)
 
 
@@ -98,7 +100,7 @@ async def corona(event):
 
 @bot.on(events.NewMessage(pattern='/help'))
 async def help(event):
-    await event.respond('Use the /corona command to view the latest corona news')
+    await event.respond('නවතම කොරෝනා ප්‍රවෘත්ති බැලීමට /corona command භාවිතා කරන්න ')
     raise events.StopPropagation
 
 def main():
