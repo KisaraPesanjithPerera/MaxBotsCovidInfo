@@ -15,14 +15,14 @@ def staat(qq):
   data = {
     "chat_id": str(qq),
     "photo": "https://telegra.ph/file/444f0805649cfcdf19112.jpg",
-    "caption": "Get instant access to Corona in Sri Lanka.  Automatically retrieve the latest corona information after adding it to the @SLCovid19slbzonebot Group. Use /help for more information. @sl_bot_zone ",
+    "caption": "Get instant access to Corona in Sri Lanka 📊 .  Automatically retrieve the latest corona information after adding it to the @SLCovid19slbzonebot Group 🦠 . Use /help for more information. @sl_bot_zone ",
     "parse_mode": "HTML",
     "reply_markup": {
         "inline_keyboard": [
             [
                 {
-                    "text": "➕ Add me to your Group 🦠 ",
-                    "url": "https://t.me/SLCovid19slbzonebot?startgroup=new"
+                    "text": " 💎 Youtube  ",
+                    "url": "https://www.youtube.com/channel/UCvYfJcTr8RY72dIapzMqFQA"
                 }, 
                 {
                     "text": " 🔔 Channel",
